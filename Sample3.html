@@ -17,11 +17,19 @@
 
             render () {
                 return (
-                    <h3>This is a simple compnent!</h3>);
+                    <div>
+                    <h3>This is a simple compnent!</h3>
+                    <p>I am some sample text</p>
+                    </div>
+                    );
             }
         };
         
-        ReactDOM.render(<Bacon />, document.getElementById('example'));
+        ReactDOM.render(<div>
+            <Bacon />
+            <Bacon />
+            <Bacon />
+            </div>, document.getElementById('example'));
     </script>
     
 </body>
