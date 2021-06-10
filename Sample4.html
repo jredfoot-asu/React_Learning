@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+        
+        class Movie extends React.Component {
+            render (){
+                return (
+                    <div>
+                        <h1>{this.props.title}</h1>
+                        <h2>{this.props.genre}</h2>
+                    </div>
+                );
+            }
+        };
+
+        
+        ReactDOM.render(
+            <div>
+            <Movie title='Avatar' genre='Action' />
+            <Movie title='The Notebook' genre='Romance' />
+            <Movie title='Captain America' genre='Action' />
+            </div>, document.getElementById('app'));
+    </script>
+    
+</body>
+</html>
