@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="example"></div>
+
+    <script type="text/babel">
+
+        var Bacon = React.createClass({
+
+            render: function () {
+                return (<h3>This is a simple compnent!</h3>);
+            }
+        });
+        
+        ReactDOM.render(<Bacon />, document.getElementById('example'));
+    </script>
+    
+</body>
+</html>
