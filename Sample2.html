@@ -13,12 +13,12 @@
 
     <script type="text/babel">
 
-        var Bacon = React.createClass({
+        class Bacon extends React.Component {
 
-            render: function () {
+            render () {
                 return (<h3>This is a simple compnent!</h3>);
             }
-        });
+        };
         
         ReactDOM.render(<Bacon />, document.getElementById('example'));
     </script>
