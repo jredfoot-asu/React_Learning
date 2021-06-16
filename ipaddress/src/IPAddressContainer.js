@@ -17,7 +17,7 @@ class IPAddressContainer extends Component {
 
     componentDidMount () {
         xhr = new XMLHttpRequest ();
-        xhr.open("GET", "https//ipinfo.io/json", true);
+        xhr.open("GET", "https://ipinfo.io/json", true);
         xhr.send();
 
         xhr.addEventListener("readystatechange", this.processRequest, false);
