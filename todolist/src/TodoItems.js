@@ -12,9 +12,9 @@ class TodoItems extends Component {
         this.props.delete(key);
     }
 
-    createTasks (item) {
-        return <li onClick={ () => this.delete(item.key) } 
-                            key={item.key}> {item.text} </li>
+    createTasks (item, date) {
+        return <li onClick={ () => this.delete(item.key) }
+                            key={item.key}> {item.text} - {item.date}</li>
     }
     render () {
         var todoEntries = this.props.entries;
