@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MenuButton from './MenuButton.js'
 import Menu from './Menu.js'
 
-class MenueContainer extends Component {
+class MenuContainer extends Component {
     constructor (props) {
         super (props);
 
@@ -10,10 +10,10 @@ class MenueContainer extends Component {
             visible: false
         };
 
-        this.handlMouseDown = this.handlMouseDown.bind(this);
+        this.handleMouseDown = this.handleMouseDown.bind(this);
         this.toggleMenu = this.toggleMenu.bind(this);
         }
-        handlMouseDown (e) {
+        handleMouseDown (e) {
             this.toggleMenu ();
 
             console.log ("clicked");
@@ -34,8 +34,8 @@ class MenueContainer extends Component {
             
             <div>
 
-                <MenuButton handleMouseDown={this.handlMouseDown} />
-                <Menu handleMouseDown={this.handlMouseDown} menuVisibility={this.state.visbile} />
+                <MenuButton handleMouseDown={this.handleMouseDown} />
+                <Menu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visbile} />
                 <div>
                     <p>
                         Can you spot the item that doesn't belong?
@@ -56,4 +56,4 @@ class MenueContainer extends Component {
     }
 }
 
-export default MenueContainer;
+export default MenuContainer;
